@@ -13,9 +13,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<scala.version>2.10.5</scala.version>
-		<scala.binary.version>2.10</scala.binary.version>
-		<spark.version>1.6.0</spark.version>
+		<scala.version>2.11</scala.version>
+		<scala.binary.version>2.11</scala.binary.version>
+		<spark.version>2.0.0</spark.version>
 		<es.version>2.2.0</es.version>
 	</properties>
 
@@ -79,11 +79,6 @@
 			<version>1.2.6</version>
 		</dependency>
 		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>12.1.0.1</version>
-		</dependency>
-		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>2.9.0</version>
@@ -92,12 +87,6 @@
 			<groupId>commons-dbutils</groupId>
 			<artifactId>commons-dbutils</artifactId>
 			<version>1.6</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.ibm.db2</groupId>
-			<artifactId>db2jcc4</artifactId>
-			<version>4.14.146</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
@@ -121,7 +110,6 @@
 
 	<build>
 		<sourceDirectory>${basedir}/src/main/scala</sourceDirectory>
-		<testSourceDirectory>${basedir}/src/test/scala</testSourceDirectory>
 		<resources>
 			<resource>
 				<directory>${basedir}/src/main/resources</directory>
